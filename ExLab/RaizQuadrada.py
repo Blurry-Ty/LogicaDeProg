@@ -1,3 +1,7 @@
+import os
+os.system('cls') or None
+
+
 # Inputs
 print ("*** Raiz Quadrada Aproximada ***")
 radicando = float(input("Extrair a raiz quadrada de: "))
@@ -15,7 +19,7 @@ raiz = (low + high)/2
 while (abs(raiz**2-radicando) >= precisao):
     tentativas +=1
     if raiz**2 < radicando:
-        low = raiz
+        low = raiz  
     else: 
         high = raiz
     raiz = (low + high)/2
